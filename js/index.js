@@ -31,21 +31,42 @@ function drop(ev) {
       shift_indexes[counter] = i;
       counter++;   
     }
-    
+  
+ 
+      // document.getElementById("test").innerHTML += "<br>" + shift_indexes[i];
+    var one = 0, two = 0;
     var end = shift_indexes.length-1;
     for ( var i = end; i >= 0; i-- ) {
-      if ( count == 6 ) {
-        var ind = shift_indexes[end];
-        document.getElementById("drag"+shift_indexes[i]).src = document.getElementById("drag"+ind).src;
+      
+      if ( one == 0 ) {
+        one = document.getElementById("drag"+shift_indexes[i]).src;
       }
-      else if ( count == 7 ) {
-        var ind = shift_indexes[end-1];
-        document.getElementById("drag"+shift_indexes[i]).src = document.getElementById("drag"+ind).src;
+      else if ( one != 0 && two == 0 ) {
+        two = document.getElementById("drag"+shift_indexes[i]).src;
+      }
+      
+      if ( i == 0 ) {
+        document.getElementById("drag"+shift_indexes[i]).src = one;
       }
       else {
         var ind = shift_indexes[i-2];
-        document.getElementById("drag"+shift_indexes[i]).src = document.getElementById("drag"+ind).src;
-      }  
+        document.getElementById("drag"+shift_indexes[i]).src = document.getElementById("drag"+shift_indexes[i-1]).src;
+      }
+      
+      
+      
+      /*
+      if ( i == 1 ) {
+        document.getElementById("drag"+shift_indexes[i]).src = one;
+      }
+      else if ( i == 0 ) {
+        document.getElementById("drag"+shift_indexes[i]).src = two;
+      }
+      else {
+        var ind = shift_indexes[i-2];
+        document.getElementById("drag"+shift_indexes[i]).src = document.getElementById("drag"+shift_indexes[i-2]).src;
+      }
+      */
     }  
   
     /*
