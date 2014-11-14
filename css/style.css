@@ -1,0 +1,26 @@
+body {
+  background-color: #CCCCCC
+}
+#big {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 60%; 
+  width: 900px;
+  border: 8px solid white;
+  background-color: #EEEEEE;
+  word-spacing: 15px;
+  text-align: center;
+}
+#boxes {
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: pink; */
+}
+#div1 {
+  width:350px;
+  height:70px;
+  padding:10px;
+  border:1px solid #aaaaaa;
+  display: none;
+}
