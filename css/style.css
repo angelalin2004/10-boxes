@@ -1,21 +1,31 @@
 body {
   background-color: #CCCCCC
 }
+#instructions {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  min-width: 400px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 #big {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
   width: 60%; 
-  width: 900px;
+  min-width: 900px;
   border: 8px solid white;
   background-color: #EEEEEE;
-  word-spacing: 15px;
   text-align: center;
 }
 #boxes {
   margin-left: auto;
   margin-right: auto;
-  /* background-color: pink; */
+  word-spacing: 15px;
+}
+#buttons {
+  word-spacing: 10px;
 }
 #div1 {
   width:350px;

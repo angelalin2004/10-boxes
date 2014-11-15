@@ -13,7 +13,14 @@
 
 <body>
 
-  <div id="big">
+  <div id="instructions">
+  These boxes are draggable!
+  <br>Drag and drop one box onto another to switch them. 
+  <br>The rest will shift one space to the right, looping back to the front.
+  <br> Can you put the boxes back in order again?
+</div>
+
+<div id="big">
   <!--
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
   -->
@@ -32,7 +39,15 @@
     <img id= "drag10" src="http://placehold.it/150/d5a6bd/000000&text=10" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
     <br><br>
   </div>
+  <div id="buttons">
+    <button type="button" id="randomize" onclick="randomize()">Randomize</button>
+    <!-- DOESN'T WORK YET 
+    <button type="button" id="reset" onclick="reset()">Reset</button>
+    -->
+  </div>
   <div id="test"></div>
+  <br>
+
 </div>
 
   <script src="js/index.js"></script>
